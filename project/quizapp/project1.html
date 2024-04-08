@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project1.css" />
+  </head>
+  <body>
+    <section id="header">
+      <h1>Quiz app</h1>
+      <div>
+        <p>This is a general knowledge quiz with a total of 10 questions and you are expected to attempt each question. Once you have submitted your answers and checked your result, Don't forget to click the Reset button.
+        </p>
+      </div>
+    </section>
+    <section id="navigation">
+      <h2 style="text-align: left;"><u>NAVIGATE</u></h2> <br>
+      <!-- <a href="#part1">Questions</a> <br> -->
+      <a href="#studlistheader">Student List</a><br>
+      <a href="#reset">Reset Quiz</a> <br>
+      </section>
+    </section>
+
+    <main>
+        <div id="part1">
+          <!-- <p>Answer the following questions correctly.</p> -->
+          <label for="q1"
+            >1. Which planet in our solar system is known for its rings ?</label
+          >
+          <input type="radio" 
+            name="question1" 
+            id="q1i"
+            value="Venus"
+            onclick="check1()"
+          />
+          Venus
+          <input
+            type="radio"
+            name="question1"
+            id="q1ii"
+            value="Mars"
+             onclick="check1()"
+          />
+          Mars
+          <input
+            type="radio"
+            name="question1"
+            id="q1iii"
+            value="Saturn"
+          
+          />Saturn
+          <input
+            type="radio"
+            name="question1"
+            id="q1iv"
+            value="Neptune"
+            onclick="check1()"
+          />
+          Neptune
+          <!-- <button onclick="check()">Check</button> -->
+          <p id="result1"></p>
+          <br />
+
+          <label for="q2" id="q2">2. What is the capital of Australia?</label>
+          <input
+            type="radio"
+            name="question2"
+            id="q2i"
+            value="Melbourne"
+            onclick="check2()"
+          />
+          Melbourne
+          <input
+            type="radio"
+            name="question2"
+            id="q2ii"
+            value="Sydney"
+            onclick="check2()"
+          />
+          Sydney
+          <input
+            type="radio"
+            name="question2"
+            id="q2iii"
+            value="Canberra"
+
+          />Canberra
+          <input
+            type="radio"
+            name="question2"
+            id="q2iv"
+            value="Adelaide"
+            onclick="check2()"
+          />
+          Adelaide
+
+          <p id="result2"></p>
+          <br />
+          <label for="q3">3. Who wrote the play "Romeo and Juilet"?</label>
+      
+          <input
+            type="radio"
+            name="question3"
+            id="q3i"
+            value="William Shakespeare"
+            
+          />
+          William Shakespeare
+          <input
+            type="radio"
+            name="question3"
+            id="q3ii"
+            value="Oscar Wilde"
+            onclick="check3()"
+          />
+          Oscar Wilde
+          <input
+            type="radio"
+            name="question3"
+            id="q3iii"
+            value="Jane Austen"
+            onclick="check3()"
+          />Jane Austen
+          <input
+            type="radio"
+            name="question3"
+            id="q3iv"
+            value="Charles Dickens"
+            onclick="check3()"
+          />
+          Charles Dickens
+
+          <p id="result3"></p>
+          <br />
+
+          <label for="q4"
+            >4. Which artist painted the mural of "The Last Supper" in
+            Milan?</label
+          >
+      
+          <input
+            type="radio"
+            name="question4"
+            id="q4i"
+            value="Pablo Picasso"
+            onclick="check4()"
+          />
+          Pablo Picasso
+          <input
+            type="radio"
+            name="question4"
+            id="q4ii"
+            value="Leonardo da Vinci"
+          
+          />
+          Leonardo Davinci
+          <input
+            type="radio"
+            name="question4"
+            id="q4iii"
+            value="Michelangelo"
+            onclick="check4()"
+          />Michelangelo
+          <input
+            type="radio"
+            name="question4"
+            id="q4iv"
+            value="Vincent Van Gogh"
+            onclick="check4()"
+          />
+          Vincent Van Gogh
+          <p id="result4"></p>
+          <br />
+
+          <label for="q5">5. What does DC stand for in Washington DC</label>
+          
+          <input
+            type="radio"
+            name="question5"
+            id="q5i"
+            value="District of Colombia"
+      
+          />
+          District of Colombia
+          <input
+            type="radio"
+            name="question5"
+            id="q5ii"
+            value="Downtown Center"
+            onclick="check5()"
+          />
+          Downtown Center
+          <input
+            type="radio"
+            name="question5"
+            id="q5iii"
+            value="Delaware City"
+            onclick="check5()"
+          />Delaware City
+          <input
+            type="radio"
+            name="question5"
+            id="q5iv"
+            value="Detriot County"
+            onclick="check5()"
+          />
+          Detriot County
+          <p id="result5"></p>
+          <br />
+        
+          <label for="q6">6. What is the capital city of Ethiopia?</label>
+         
+          <input
+            type="radio"
+            name="question6"
+            id="q6i"
+            value="Paris"
+          />
+          Paris
+          <input type="radio" name="question6" id="q6ii" onclick="check6()" />
+          Pretoria
+          <input
+            type="radio"
+            name="question6"
+            id="q6iii"
+            value="Addis Ababa"
+        
+          />
+          Addis Ababa
+          <input
+            type="radio"
+            name="question6"
+            id="q6iv"
+            value="Rome"
+
+          />
+          Rome
+          <br />
+          <!-- <button onclick="check()">Check</button> -->
+          <p id="result6"></p>
+          <br />
+
+          <label for="q7">7. Which of the following is the largest ocean</label>
+    
+          <input
+            type="radio"
+            name="question7"
+            id="q7i"
+            value="Indian Ocean"
+            onclick="check7()"
+          />
+          Indian Ocean
+          <input
+            type="radio"
+            name="question7"
+            id="q7ii"
+            value="Pacific Ocean"
+   
+          />
+          Pacific Ocean
+          <input
+            type="radio"
+            name="question7"
+            id="q7iii"
+            value="Atlantic ocean"
+
+          />
+          Atlantic Ocean
+          <input
+            type="radio"
+            name="question7"
+            id="q7iv"
+            value="Artic Ocean"
+            onclick="check7()"
+          />
+          Arctic Ocean
+          <br />
+          <p id="result7"></p>
+          <br />
+
+          <label for="q8"
+            >8. Which of the following is the largest mountain</label
+          >
+ 
+          <input
+            type="radio"
+            name="question8"
+            id="q8i"
+            value="Mount Kilimanjaro"
+            onclick="check8()"
+          />
+          Mount Kilimajaro
+          <input
+            type="radio"
+            name="question8"
+            id="q8ii"
+            value="Mount Ras Dashen"
+            onclick="check8()"
+          />
+          Mount Ras Dashen
+          <input
+            type="radio"
+            name="question8"
+            id="q8iii"
+            value="Mount Everest"
+        
+          />
+          Mount Everest
+          <input
+            type="radio"
+            name="question8"
+            id="q8iv"
+            value="Mount Entoto"
+        
+          />
+          Mount Entoto
+          <p id="result8"></p>
+          <br />
+
+          <label for="q8">9. What is the chemical symbol for silver? </label>
+
+          <input
+            type="radio"
+            name="question9"
+            id="q9i"
+            value="Au"
+            onclick="check9()"
+          />
+          Au
+          <input
+            type="radio"
+            name="question9"
+            id="q9ii"
+            value="Ag"
+     
+          />
+          Ag
+          <input
+            type="radio"
+            name="question9"
+            id="q9iii"
+            value="Si"
+    
+          />
+          Si
+          <input
+            type="radio"
+            name="question9"
+            id="q9iv"
+            value="Ng"
+            onclick="check9()"
+          />
+          Ng
+          <p id="result9"></p>
+          <br />
+
+          <label for="q10">10. Where do the Blue and White Nile meet? </label>
+
+          <input
+            type="radio"
+            name="question10"
+            id="q10i"
+            value="Egypt"
+            onclick="check10()"
+          />
+          Egypt
+          <input
+            type="radio"
+            name="question10"
+            id="q10ii"
+            value="Uganda"
+            onclick="check10()"
+          />
+          Uganda
+          <input
+            type="radio"
+            name="question10"
+            id="q10iii"
+            value="South Africa"
+            onclick="check10()"
+          />
+          South Africa
+          <input
+            type="radio"
+            name="question10"
+            id="q10iv"
+            value="Sudan"
+ 
+          />
+          Sudan
+          <p id="result10"></p>
+          <br />
+        </div>
+        <center>
+          <button id="btn1" onclick="totalScore()">Submit</button>
+             <p id="total"></p>
+      
+          <button id="reset" onclick="reset()">Reset</button>
+         <!-- <input type="reset" value="Reset"> -->
+        </center>
+    </main>
+   <section id="studList">
+    <h2 id="studlistheader">Student List</h2>
+    <table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Score</th>
+    <th>Update</th>
+  </tr>
+</thead>
+<tbody>
+</tbody>
+    </table>
+   </section>
+    <footer id="footer">
+      <p>Contact us at saron@gmail for any questions or feedback about the quiz. Thank you!</p>
+    </footer>
+    <script src="project1.js"></script>
+  </body>
+</html>

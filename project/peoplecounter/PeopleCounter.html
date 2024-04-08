@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People Counter app</title>
+    <style>
+      body {
+        background-image: url("https://media.istockphoto.com/id/1083982928/photo/jaipur-metro.jpg?s=612x612&w=0&k=20&c=gLJrIg6X9XvumVlMLyZ-RUi3SZJa0Yu4O4UfWVoJc0c=");
+        background-size: cover;
+        text-align: center;
+
+        color: white;
+        height: 100vh;
+
+        padding-bottom: 20px;
+        margin-top: 100px;
+      }
+      h2 {
+        border-style: solid;
+        border-width: thin;
+        border-color: white;
+      }
+      button {
+        background-color: chartreuse;
+        width: 100px;
+        font-weight: bold;
+      }
+      p {
+        color: white;
+      }
+      .container {
+        border-style: solid;
+        border-width: thick;
+        border-color: rgb(48, 42, 42);
+        border-radius: 10px;
+        background-color: black;
+        width: 50%;
+      }
+      #count-el {
+        width: 50%;
+        align: center;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <!--background-image: url("https://th.bing.com/th/id/OIP.4CRCJwL7g_-WJyXDRJNtOgHaC9?rs=1&pid=ImgDetMain");-->
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h1>People Entered</h1>
+        <center><h2 id="count-el">0</h2></center>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Previous entries:</p>
+      </div>
+    </center>
+
+    <script src="PeopleCounter.js"></script>
+  </body>
+</html>

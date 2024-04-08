@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <section id="wrapper">
+        <center>
+    <h1>Your Todo List</h1>
+    <div id="input">
+        <input type="text" id="no1" placeholder="New Item" autofocus autocomplete="off">
+        <button onclick="create()" id="button1">+</button>
+    </div>
+    <div id="todolist">
+       <!-- Data is added here  -->
+    </div>
+    <div id="footer"></div>
+    <button id="button2" onclick="Delete()">Clear All</button>
+</center>
+</section>
+
+    <script src="todo.js"></script>
+</body>
+</html>

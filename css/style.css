@@ -109,6 +109,8 @@ body {
   gap: 5rem;
 
   justify-content: center;
+  background-color: rgb(43, 42, 42);
+  color: #fff;
 }
 
 .content h1 {
@@ -180,7 +182,7 @@ body {
 
 .active {
   height: 100%;
-  background-color: #b0444f;
+  background-color: #c03f4c;
   border-radius: 10px;
   transition: width 0.5s ease-in-out;
   width: 0%;

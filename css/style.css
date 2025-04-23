@@ -18,14 +18,20 @@ body {
 
 /* SIDEBAR STYLING */
 .sidebar {
-  background-color: #933649; /* Matches reddish shade from your screenshot */
+  background-color: rgb(
+    164,
+    63,
+    73
+  ); /* Matches reddish shade from your screenshot */
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
   position: sticky;
+  top: 0;
   left: 0;
+  bottom: 0;
   height: 100vh;
 }
 

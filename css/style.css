@@ -230,8 +230,8 @@ body {
 
 .links a {
   text-decoration: none;
-  color: white;
-  background-color: #7e333d;
+  color: #7e333d;
+  background-color: white;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-size: 0.9rem;
@@ -240,6 +240,7 @@ body {
 
 .links a:hover {
   background-color: #3c151a;
+  color: white;
 }
 
 .description {

@@ -34,10 +34,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0;
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 99vh;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .intro-img img {

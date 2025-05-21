@@ -13,3 +13,9 @@ function progressBarFilling() {
     bar.classList.add("active");
   });
 }
+
+let links = document.querySelectorAll(".projects a");
+
+links.forEach((link) => {
+  link.target = "_blank";
+});

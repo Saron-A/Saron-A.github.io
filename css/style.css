@@ -128,9 +128,9 @@ body {
 }
 
 .content .about {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .content .skills {

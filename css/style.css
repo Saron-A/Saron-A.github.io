@@ -114,7 +114,7 @@ body {
 
 /* MAIN CONTENT */
 .content {
-  padding: 1.5rem 2.5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -122,13 +122,19 @@ body {
 
   position: relative;
   color: #c65560;
-  padding: 100px 20px; /* adjust as needed */
+
   text-align: center;
 }
 
 .content h1 {
   font-size: 2rem;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   text-align: center;
 }
 

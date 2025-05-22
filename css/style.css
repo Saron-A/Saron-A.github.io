@@ -37,10 +37,11 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  height: 99vh;
+  height: 100vh;
   overflow-y: auto;
   -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
   scrollbar-width: none;
+  padding-top: 1rem;
 }
 
 .sidebar::-webkit-scrollbar {

@@ -18,4 +18,5 @@ let links = document.querySelectorAll(".projects a");
 
 links.forEach((link) => {
   link.target = "_blank";
+  link.rel = "noopener";
 });

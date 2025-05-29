@@ -21,9 +21,24 @@ links.forEach((link) => {
   link.rel = "noopener";
 });
 
-let form = document.querySelector(".contact form");
+const form = document.getElementById(".contact form");
 
-form.addEventListener("submit", () => {
-  alert("Your message has been sent successfully!");
-  form.clear();
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    form.reset();
+    alert("Thank you for your message! I will get back to you soon.");
+  } else {
+    alert("Oops! Something went wrong. Please try again.");
+  }
 });

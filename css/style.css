@@ -144,6 +144,10 @@ body {
   line-height: 1.5;
 }
 
+.no-display {
+  display: hidden;
+}
+
 .content .skills {
   display: flex;
   flex-direction: column;

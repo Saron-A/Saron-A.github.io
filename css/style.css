@@ -194,7 +194,16 @@ body {
   height: 100%;
   background-color: #7bcbfe;
   border-radius: 10px;
-  transition: width 0.5s ease-in-out;
+  animation: 2s animate-progressBar infinite alternate;
+}
+
+@keyframes animate-progressBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--target-width, 100%);
+  }
 }
 
 .projects {

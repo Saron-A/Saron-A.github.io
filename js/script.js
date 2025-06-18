@@ -11,6 +11,7 @@ function progressBarFilling() {
     const percent = progressRates[index].textContent.trim();
     bar.style.width = percent;
     bar.classList.add("active");
+    bar.style.setProperty("--target-width", percent);
   });
 }
 

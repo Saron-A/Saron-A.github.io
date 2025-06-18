@@ -107,7 +107,7 @@ body {
 
 /* MAIN CONTENT */
 .content {
-  padding: 2.5rem;
+  padding: 1rem 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -120,9 +120,10 @@ body {
 }
 
 .content h1 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  margin-bottom: 4rem;
   text-align: center;
+  padding-top: 0;
 }
 
 .content h2 {
@@ -133,15 +134,17 @@ body {
 
 .content .about {
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   font-size: 1rem;
-  background-color: #005b9ca0; /* dark overlay */
-  padding: 50px;
+  /* background-color: #005b9ca0; */
+  padding: 1rem;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
-  color: white;
+  color: #0f64a3;
   line-height: 1.5;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .no-display {
@@ -185,7 +188,7 @@ body {
 .subcontent .progress-bar {
   width: 100%;
   height: 1rem;
-  background-color: #ddd;
+  background-color: #496075;
   border-radius: 10px;
   overflow: hidden;
 }

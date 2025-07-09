@@ -240,6 +240,17 @@ body {
   box-shadow: 0 12px 28px rgba(0, 90, 156, 0.4);
 }
 
+.project-card.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-in-out;
+}
+
 .project-title {
   text-align: center;
   font-size: 1.2rem;
@@ -255,6 +266,11 @@ body {
   justify-self: center;
   align-self: center;
   border-radius: 8px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-card:hover .image-section img {
+  transform: scale(1.05);
 }
 
 .links {
@@ -270,12 +286,14 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-size: 0.9rem;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
 }
 
 .links a:hover {
   background-color: #0a4370;
   color: white;
+  box-shadow: 0 0 10px #7bcbfe;
 }
 
 .description {
@@ -284,6 +302,14 @@ body {
   color: #333;
   font-style: italic;
   color: white;
+}
+
+.description b {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0 0.3rem;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 .contact {

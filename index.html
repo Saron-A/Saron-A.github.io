@@ -366,5 +366,20 @@ A minimalist, responsive poetry archive showcasing my original poems. Inspired b
 
 
     </div>
+
+    <script>
+  const cards = document.querySelectorAll(".project-card");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+    });
+  }, { threshold: 0.1 });
+
+  cards.forEach((card) => {
+    card.classList.add("hidden");
+    observer.observe(card);
+  });
+</script>
   </body>
 </html>

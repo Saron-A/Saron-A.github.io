@@ -107,7 +107,7 @@ body {
 
 /* MAIN CONTENT */
 .content {
-  padding: 1rem 2.5rem;
+  /* padding: 1rem 2.5rem; */
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -145,6 +145,7 @@ body {
   line-height: 1.5;
   font-style: italic;
   font-weight: 500;
+  padding: 1rem 2.5rem;
 }
 
 .no-display {
@@ -154,8 +155,9 @@ body {
 .content .skills {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 20px;
+  padding: 3.5rem 2.5rem;
 }
 
 .skills ul {
@@ -213,22 +215,26 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: #b9e1fe;
+  padding: 2rem 1rem;
 }
 .project-cards {
   display: flex;
-  gap: 2rem;
+  row-gap: 2rem;
+  column-gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .project-card {
   width: 400px;
   padding: 1rem 2rem;
-  background-color: #5392c1;
+
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #0077cb;
   gap: 1rem;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -282,23 +288,23 @@ body {
 .links a {
   text-decoration: none;
   color: #005a9c;
-  background-color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-size: 0.9rem;
+  background-color: transparent;
+  padding: 0.25rem;
+  border-radius: 50%;
+  font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 0 0 transparent;
 }
 
 .links a:hover {
-  background-color: #0a4370;
+  background-color: white;
   color: white;
-  box-shadow: 0 0 10px #7bcbfe;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .links .link-icons {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .description {

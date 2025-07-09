@@ -296,6 +296,11 @@ body {
   box-shadow: 0 0 10px #7bcbfe;
 }
 
+.links .link-icons {
+  height: 2rem;
+  width: 2rem;
+}
+
 .description {
   font-size: 0.85rem;
   line-height: 1.4;

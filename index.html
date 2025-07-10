@@ -33,8 +33,9 @@
       <div class="content">
         <!-- <h1>My Portfolio</h1> -->
         <div class="about" id="about">
-          <h1>About Me</h1>
-          <p>
+          <h1>ABOUT ME</h1>
+          <div class="about-p-container">
+            <p>
          Hi, I’m Saron Abebe — a front-end developer and Software Engineering student at Addis Ababa Science and Technology University (AASTU). I specialize in HTML, CSS, JavaScript, and React, with a focus on building responsive, accessible, and user-friendly web interfaces.
 <br>
 Beyond the classroom, I’ve been growing through self-directed learning, particularly through The Odin Project, where I’m exploring full-stack development. I also hold certificates in coding and web development from SheCodes, which have helped me strengthen my understanding of modern tools and best practices.
@@ -44,10 +45,12 @@ Some of the projects I’ve built include a React shopping cart app, a book down
 I’m passionate about building with purpose — especially tools that reflect culture, creativity, and real-world value. I’m currently seeking opportunities where I can contribute to innovative teams, continue learning, and grow into a well-rounded web developer.
 
           </p>
+          </div>
+          
         </div>
 
         <div class="skills" id="skills">
-          <h2>Skills</h2>
+          <h2>SKILLS</h2>
           <ul>
             <div class="first">
               
@@ -182,10 +185,29 @@ I’m passionate about building with purpose — especially tools that reflect c
       </div>
 
 <div class="projects" id="projects">
-  <h2>Projects</h2>
+  <h2>PROJECTS</h2>
   <!-- index.html -->
    <div class="project-cards">
    
+<div class="project-card">
+  <h3 class="project-title">ToDo Daily mobile application</h3>
+
+  <div class="image-section">
+    <img src="./assets/images/tododaily.png" alt="Project Screenshot">
+  </div>
+
+  <p class="description">
+A minimalist mobile task manager built with React Native and Expo. Users can add, complete, and delete daily tasks with a smooth and intuitive UI. Data is stored locally using AsyncStorage to ensure persistence across sessions. 
+  </p>
+  <p><b>Tech Stack</b>: React Native, Expo, JavaScript, AsyncStorage, React Hooks, Flexbox</p>
+
+    <div class="links">
+       <a href="" target="_blank" class="hidden"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
+    <a href="https://github.com/Saron-A/todo-app-react-native" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
+   
+  </div>
+</div>
+
 <div class="project-card">
   <h3 class="project-title">Mini Shopping Cart</h3>
 
@@ -201,10 +223,38 @@ I’m passionate about building with purpose — especially tools that reflect c
   <p><b>Tech Stack</b>: React, React Router Dom, CSS, Axios and Netlify</p>
 
     <div class="links">
-    <a href="https://github.com/Saron-A/shopping-cart-react" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
+    
     <a href="https://sarons-mini-shopping-cart.netlify.app/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
+
+    <a href="https://github.com/Saron-A/shopping-cart-react" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
   </div>
 </div>
+
+<div class="project-card">
+  <h3 class="project-title">Poetry Blog</h3>
+
+  <div class="image-section">
+    <img src="./assets/images/poetry_desktop1.png" alt="Project Screenshot">
+  </div>
+
+ 
+
+  <p class="description">
+A minimalist, responsive poetry archive showcasing my original poems. Inspired by classic literary aesthetics, it features genre filtering, an author bio, and a clean layout for an immersive, emotionally engaging reading experience.
+  </p>
+  <p><b>Tech Stack</b>: HTML, CSS, JavaScript, Firebase, API Integration, mySQL,Version Control
+</p>
+
+ <div class="links">
+    
+    <a href="https://sarons-poetry-corner.netlify.app/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
+
+    <a href="https://github.com/Saron-A/poetry-corner" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
+  </div>
+</div>
+
+
+
 
 <div class="project-card">
   <h3 class="project-title">Book Downloader Web App</h3>
@@ -221,37 +271,20 @@ I’m passionate about building with purpose — especially tools that reflect c
   <p><b>Tech Stack</b>: HTML and CSS, JavaScript, API integration and React</p>
 
    <div class="links">
-    <a href="https://github.com/Saron-A/book-downloader-app-react" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
+    
     <a href=" https://saron-s-online-book-downloader-app.netlify.app/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
+
+    <a href="https://github.com/Saron-A/book-downloader-app-react" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
   </div>
 </div>
 
-<div class="project-card">
-  <h3 class="project-title">Poetry Blog</h3>
 
-  <div class="image-section">
-    <img src="./assets/images/poery-blog.png" alt="Project Screenshot">
-  </div>
-
- 
-
-  <p class="description">
-A minimalist, responsive poetry archive showcasing my original poems. Inspired by classic literary aesthetics, it features genre filtering, an author bio, and a clean layout for an immersive, emotionally engaging reading experience.
-  </p>
-  <p><b>Tech Stack</b>: HTML, CSS, JavaScript, Firebase, API Integration, mySQL,Version Control
-</p>
-
- <div class="links">
-    <a href="https://github.com/Saron-A/poetry-corner" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
-    <a href="https://sarons-poetry-corner.netlify.app/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
-  </div>
-</div>
 
 <div class="project-card">
   <h3 class="project-title">Ankilba Daycare Website</h3>
 
   <div class="image-section">
-    <img src="./assets/images/Ankilba-mobile.png" alt="Project Screenshot">
+    <img src="./assets/images/ankilba_desktop.png" alt="Project Screenshot">
   </div>
 
  
@@ -262,30 +295,13 @@ A minimalist, responsive poetry archive showcasing my original poems. Inspired b
   <p><b>Tech Stack</b>: HTML, CSS, JavaScript and FormSpree</p>
 
    <div class="links">
-    <a href="https://ankilba-daycare.netlify.app/" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
-    <a href="https://saron-a.github.io/dayCare-website/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
+
+    <a href="https://ankilba-daycare.netlify.app/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
+        <a href="https://github.com/Saron-A/dayCare-website" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
   </div>
 </div>
 
-<div class="project-card">
-  <h3 class="project-title">General Knowledge Quiz App</h3>
 
-  <div class="image-section">
-    <img src="./assets/images/Quiz-app.png" alt="Project Screenshot">
-  </div>
-
-
-
-  <p class="description">
-  A lightweight and interactive web application built with HTML, CSS, and JavaScript. It allows users to answer multiple-choice questions, receive instant feedback, and view their final score. Designed with a clean UI and smooth user experience in mind.
-  </p>
-  <p><b>Tech Stack</b>: HTML, CSS and JavaScript</p>
-
-    <div class="links">
-    <a href="https://github.com/Saron-A/new-quiz-app" target="_blank"><img class="link-icons" src="./assets/icons/github (1).png" alt=""></a>
-    <a href="https://saron-a.github.io/new-quiz-app/" target="_blank"><img class="link-icons" src="./assets/icons/website.png" alt=""></a>
-  </div>
-</div>
    </div>
 
         
@@ -293,7 +309,7 @@ A minimalist, responsive poetry archive showcasing my original poems. Inspired b
 
 <div class="contact" id="contact">
   <div class="message">
-    <h2>Contact Me</h2>
+    <h2>CONTACT ME</h2>
           <p>
             If you have any questions or would like to get in touch, feel free
             to reach out to me at:

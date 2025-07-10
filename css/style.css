@@ -15,6 +15,10 @@ body {
   background-color: #dff0ff;
 }
 
+.hidden {
+  display: none;
+}
+
 /* CONTAINER GRID */
 .container {
   display: grid;
@@ -110,7 +114,7 @@ body {
   /* padding: 1rem 2.5rem; */
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 5rem 5rem 5rem 0;
   justify-content: center;
 
   position: relative;
@@ -136,16 +140,19 @@ body {
   text-align: justify;
   margin-bottom: 1rem;
   font-size: 1rem;
-  /* background-color: #005b9ca0; */
-  padding: 1rem;
-  max-width: 800px;
+  background-color: #f0f8ff;
+
   margin: 0 auto;
   border-radius: 10px;
   color: #0f64a3;
   line-height: 1.5;
   font-style: italic;
   font-weight: 500;
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 0;
+}
+
+.about-p-container {
+  padding: 1.5rem 3rem;
 }
 
 .no-display {
@@ -157,13 +164,15 @@ body {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 20px;
-  padding: 3.5rem 2.5rem;
+  padding: 4rem 2.5rem;
+  background-color: #dff0ff;
 }
 
 .skills ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(40%, 1fr));
   gap: 3rem;
+  padding: 2.25rem 0;
 }
 
 .skills ul div {
@@ -216,31 +225,46 @@ body {
   flex-direction: column;
   gap: 2rem;
   background-color: #b9e1fe;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem;
 }
 .project-cards {
   display: flex;
-  row-gap: 2rem;
-  column-gap: 1rem;
+  gap: 2.5rem;
+
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .project-card {
   width: 400px;
-  padding: 1rem 2rem;
-
-  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  background-color: #5392c1;
+  border-radius: 30px 5px 25px 10px; /* NEW asymmetric curve */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #0077cb;
   gap: 1rem;
   color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform-style: preserve-3d;
 }
-
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.1),
+    transparent 60%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
 .project-card:hover {
   transform: perspective(600px) scale(1.03) rotateY(2deg);
   box-shadow: 0 12px 28px rgba(0, 90, 156, 0.4);
@@ -313,6 +337,7 @@ body {
   color: #333;
   font-style: italic;
   color: white;
+  text-align: justify;
 }
 
 .description b {
@@ -327,10 +352,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: #94cff3;
+  padding: 4rem 0 2rem 0;
+  color: white;
 }
 
 .contact .message {
   text-align: center;
+  gap: 2rem;
 }
 .contact .sub-contact {
   display: grid;
@@ -368,9 +397,13 @@ form {
 form input,
 textarea {
   padding: 0.8rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: none;
   outline: none;
+}
+
+form textarea {
+  border-radius: 0.5rem;
 }
 
 form textarea:focus {

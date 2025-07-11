@@ -159,6 +159,20 @@ body {
   display: hidden;
 }
 
+.resume-link {
+  padding: 0.5rem;
+  background-color: lightskyblue;
+  border-radius: 0.25rem;
+  width: fit-content;
+  justify-self: flex-end;
+  margin-right: 1rem;
+}
+
+.resume-link a {
+  text-decoration: none;
+  color: white;
+}
+
 .content .skills {
   display: flex;
   flex-direction: column;

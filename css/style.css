@@ -433,14 +433,16 @@ form button {
   justify-self: center;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  background-color: #5392c1;
+  background-color: white;
+  color: #005a9c;
+  font-weight: bold;
   border: none;
   outline: none;
-  color: white;
   transition: all 200ms ease-in-out;
 }
 form button:hover {
-  background-color: #7bcbfe;
+  background-color: #005a9c;
+  color: white;
   cursor: pointer;
   transform: scale(1.1);
 }

@@ -475,7 +475,11 @@ form button:hover {
   .author-content {
     display: none;
   }
-
+  .resume-class {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
   .resume-link {
     margin: 0 1.5rem;
     padding: 0.5rem 1rem;

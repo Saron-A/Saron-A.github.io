@@ -476,6 +476,11 @@ form button:hover {
     display: none;
   }
 
+  .resume-link {
+    margin: 0 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+
   .contact {
     display: flex;
     flex-direction: column;
